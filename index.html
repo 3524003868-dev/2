@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffffff;   /* 纯白背景 */
+            color: #ffffff;              /* 白色文字，与背景融为一体 */
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            padding: 2rem 1.5rem;
+        }
+
+        .dialogue {
+            white-space: pre-wrap;
+            word-break: break-word;
+            /* 允许用户选中文本 */
+            user-select: text;
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+        }
+
+        /* 我亲爱的，你找到彩蛋了吗？ */
+        .dialogue::selection {
+            background: #3390ff;   /* 经典选中蓝 */
+            color: #ffffff;        /* 白色文字，清晰可见 */
+        }
+
+        .dialogue::-moz-selection {
+            background: #3390ff;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="dialogue">
+—  坚硬而沉重的，清点数量<br>
+—  是的，但我得说，歧义是可能存在的<br>
+—  因此，圆形是重要的<br>
+—  明白了<br>
+—  无序而有些奇怪的，从实记录<br>
+—  是的，但我得说，寻找是有些困难的<br>
+—  因此，背景中的细节是需要注意的<br>
+—  明白了<br>
+<br>
+<br>
+<br>
+—  …<br>
+—  先生？<br>
+—  罐装可乐是值得被购买的<br>
+—  是的，但我得说，小数是不被允许的<br>
+—  因此，购买两罐是合适的<br>
+—  谢谢您，先生<br>
+—  不，我喝两罐
+        </div>
+    </div>
+</body>
+</html>
